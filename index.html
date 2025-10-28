@@ -1,27 +1,35 @@
-<html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Identitas Mahasiswa</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 50px;
-      background-color: #f0f4ff;
-    }
-    img {
-      width: 200px;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalkulator Zakat Mal</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Identitas Mahasiswa</h1>
-  <p><strong>NIM:</strong> 256512007</p>
-  <p><strong>Nama:</strong> Rikky Salman</p>
-  <img src="foto.jpg" alt="Foto Diri">
+  <div class="container">
+    <h1>Kalkulator Zakat Mal</h1>
+
+    <form id="zakatForm">
+      <label for="harta">Total Harta (Rp):</label>
+      <input type="number" id="harta" placeholder="Masukkan total harta..." required />
+
+      <label for="hutang">Total Hutang (Rp):</label>
+      <input type="number" id="hutang" placeholder="Masukkan total hutang..." required />
+
+      <label for="hargaEmas">Harga Emas per Gram (Rp):</label>
+      <input type="number" id="hargaEmas" value="1200000" required />
+
+      <button type="submit">Hitung Zakat</button>
+    </form>
+
+    <div id="hasil" class="hasil"></div>
+  </div>
+
+  <footer>
+    <p>© 2025 Kalkulator Zakat | Dibuat oleh Rikky Salman</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
